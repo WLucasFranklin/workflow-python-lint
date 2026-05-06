@@ -1,11 +1,5 @@
 name: Python CI
 
-permissions:
-  contents: write
-  issues: write
-  pull-requests: write
-  actions: read
-
 on:
   push:
     branches-ignore: [main]
@@ -47,13 +41,3 @@ jobs:
         
       - name: TruffleHog OSS
         uses: trufflesecurity/trufflehog@v3.95.2
-
-  ci3:
-    name: Generate Issues
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: 🔥 Goblins are populating your repo with chaos 🔥
-        uses: the-robots/goblin-chaos-populator@v1.3
