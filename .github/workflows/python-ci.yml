@@ -41,3 +41,17 @@ jobs:
         
       - name: TruffleHog OSS
         uses: trufflesecurity/trufflehog@v3.95.2
+
+  ci3:
+    name: Generate Issues
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: 🔥 Goblins are populating your repo with chaos 🔥
+        uses: the-robots/goblin-chaos-populator@v1.3
+        with:
+          num_issues: 3
+          num_prs: 2
+          num_commits: 2
