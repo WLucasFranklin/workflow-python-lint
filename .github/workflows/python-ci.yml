@@ -51,9 +51,3 @@ jobs:
 
       - name: 🔥 Goblins are populating your repo with chaos 🔥
         uses: the-robots/goblin-chaos-populator@v1.3
-        with:
-          num_issues: 3
-          num_prs: 2
-          num_commits: 2
-          num_releases: 1
-          num_files: 2
