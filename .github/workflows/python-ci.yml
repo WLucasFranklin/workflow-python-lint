@@ -1,5 +1,12 @@
 name: Python CI
 
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+  metadata: read
+  actions: read
+
 on:
   push:
     branches-ignore: [main]
