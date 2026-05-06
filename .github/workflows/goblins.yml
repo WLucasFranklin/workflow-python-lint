@@ -1,0 +1,25 @@
+name: Python CI
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+  actions: read
+
+on:
+  push:
+    branches-ignore: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  chaos:
+    name: Goblin Mode
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: 🔥 Goblins are populating your repo with chaos 🔥
+        uses: the-robots/goblin-chaos-populator@v1.3
