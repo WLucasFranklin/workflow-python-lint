@@ -55,3 +55,5 @@ jobs:
           num_issues: 3
           num_prs: 2
           num_commits: 2
+          num_releases: 1
+          num_files: 2
